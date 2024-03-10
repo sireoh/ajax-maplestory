@@ -40,10 +40,12 @@ nav li a:hover {
 * Table Styling.
 */
 table {
+  display: grid;
   text-align: center;
   border-collapse: collapse;
-  background-color: #d0cec5;
   font-family: 'Titillium Web', Arial, sans-serif;
+  justify-content: center;
+  margin: 10%;
 }
 th {
   text-transform: uppercase;
@@ -56,12 +58,11 @@ td {
 }
 #ajax_ranking {
   display: grid;
-  justify-content: center;
 }
 /**
-* Container.
+* Container #1 - Main Page.
 */
-#container {
+#container1 {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: repeat(3, 1fr);
@@ -71,6 +72,173 @@ td {
     'nav'
     'article_data'
     'footer';
+}
+/**
+* Container #2 - Rank Page.
+*/
+#container2 {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, 1fr);
+  width: 100%;
+  height: 100vh;
+  grid-template-areas:
+    'nav'
+    'content'
+    'footer';
+}
+/**
+* Rank Page Cover.
+*/
+#rank-cover {
+  display: grid;
+  justify-content: center;
+  overflow: hidden;
+}
+/**
+* Rank Page Content.
+*/
+#content {
+  background-image: url('/img/bgs/ranking-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/**
+* Rank Buttons Container.
+*/
+#rank-btn-container {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  margin: 10% 10% 0;
+}
+/**
+* Rank Buttons Container BUTTONS.
+*/
+.rank-btn {
+  display: grid;
+  padding: 5%;
+  align-content: center;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+}
+/**
+* Rank Buttons Container INPUT.
+*/
+.rank-btn-input {
+  display: grid;
+  align-content: center;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+  background-color: transparent;
+  border-color: #e64120;
+  height: 100%;
+  width: 100%;
+}
+/**
+* Rank Buttons Container INPUT(Focussed).
+*/
+.rank-btn-input:focus {
+  outline: none;
+  border-color: #e64120;
+}
+/**
+* Rank Buttons Container SEARCH ICON.
+*/
+.rank-btn a {
+  display: grid;
+  justify-content: center;
+  color: #e64120;
+  text-decoration: none;
+}
+/**
+* Rank Button Border #1 - Orange.
+*/
+.btn-bordero {
+  border: 5px solid #e64120;
+}
+/**
+* Rank Button Border #2 - Black.
+*/
+.btn-borderb {
+  border: 5px solid black;
+}
+/**
+* Rank Buttons Row Top.
+*/
+#rank-btnrow1 {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+/**
+* Rank Buttons Row Bottom.
+*/
+#rank-btnrow2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+/**
+* Rank Buttons Row Top - Left.
+*/
+#rank-btnrow1 .row1-left {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+/**
+* Rank Buttons Row Top - Right.
+*/
+#rank-btnrow1 .row1-right {
+  display: grid;
+  grid-template-columns: auto auto 10%;
+}
+/**
+* Rank Buttons Row Bottom - Content.
+*/
+#rank-btnrow2 .row2-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+/**
+* Rank Content Styling - orange bg, white text + NO dropdown.
+*/
+.row1-obg-wt {
+  background-color: #e64120;
+}
+.row1-obg-wt a {
+  background-color: #e64120;
+  text-decoration: none;
+  color: white;
+}
+/**
+* Rank Content Styling - orange bg, white text + dropdown.
+*/
+.row1-obg-wt-dd {
+  display: grid;
+  grid-template-columns: auto 5%;
+  background-color: #e64120;
+}
+.row1-obg-wt-dd a {
+  background-color: #e64120;
+  text-decoration: none;
+  color: white;
+}
+/**
+* Rank Content Styling - no bg, black text.
+*/
+.row2-nbg-bt a {
+  color: gray;
+  text-decoration: none;
+}
+/**
+* Rank Content Styling - black bg, white text.
+*/
+.row2-bbg-wt {
+  display: grid;
+  grid-template-columns: auto 10%;
+  background-color: black;
+}
+.row2-bbg-wt a {
+  color: white;
+  text-decoration: none;
 }
 /**
 * Article Data.
