@@ -37,6 +37,17 @@ nav li a:hover {
   padding: 5px 0px;
 }
 /**
+* Headers.
+*/
+small {
+  color: #484846;
+  font-family: 'Titillium Web', sans-serif;
+}
+h1 {
+  color: black;
+  font-family: "Lora", serif;
+}
+/**
 * Table Styling.
 */
 table {
@@ -58,6 +69,10 @@ td {
 }
 #ajax_ranking {
   display: grid;
+}
+table a {
+  text-decoration: none;
+  color:#e64120;
 }
 /**
 * Container #1 - Main Page.
@@ -131,7 +146,7 @@ td {
   font-weight: bold;
   background-color: transparent;
   border-color: #e64120;
-  height: 100%;
+  height: 92%;
   width: 100%;
 }
 /**
@@ -340,6 +355,7 @@ footer li a {
   color: white;
   text-align: center;
   text-decoration: none;
+  font-family: 'Titillium Web', sans-serif;
 }
 footer li a:hover {
   color: #c13e31;
@@ -379,10 +395,22 @@ footer div {
   display: grid;
   grid-template-columns: 50% 50%;
   background-color: rgba(0,0,0,0.75);
-  color: white;
   align-items: center;
+}
+/**
+* Article Container Type #3 - Headers, and text.
+*/
+.article-container3 h1 {
+  color: white;
+}
+.article-container3 p {
+  color: white;
 }
 
 .article-container3 div {
   margin: 2%
+}
+
+@media only screen and (max-width: 990px){
+
 }
