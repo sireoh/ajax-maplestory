@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/**
+* Navbar.
+*/
+nav {
+  display: grid;
+  grid-template-columns: 75% auto;
+  grid-area: nav;
+  background-color: #f7f9e3;
+  border-bottom: 3px solid #63190e;
+  justify-content: space-around;
+  padding: 0 10% 0;
+} 
+nav ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+nav li {
+  float: left;
+}
+nav li a {
+  font-size: 20px;
+  display: inline-block;
+  color: #63190e;
+  text-align: center;
+  padding: 30px 16px;
+  text-decoration: none;
+}
+nav li a:hover {
+  color: #c13e31;
+  background-color: #ccc;
+}
+.nav-logo {
+  padding: 5px 0px;
+}
+/**
+* Table Styling.
+*/
+table {
+  text-align: center;
+  border-collapse: collapse;
+  background-color: #d0cec5;
+  font-family: 'Titillium Web', Arial, sans-serif;
+}
+th {
+  text-transform: uppercase;
+  background-color: #484846;
+  color: white;
+  padding: 10px 45px 10px;
+}
+td {
+  padding: 0 35px 0;
+}
+#ajax_ranking {
+  display: grid;
+  justify-content: center;
+}
+/**
+* Container.
+*/
+#container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, 1fr);
+  width: 100%;
+  height: 100vh;
+  grid-template-areas:
+    'nav'
+    'article_data'
+    'footer';
+}
+/**
+* Article Data.
+*/
+#article_data {
+  display: grid;
+  height: 100%;
+}
+/**
+* Carousel / Cover
+*/
+.carousel {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: red;
+  align-content: center;
+  justify-content: center;
+}
+.carousel img {
+  height: 100%;
+}
+/**
+* Featured News and Updates (BG1)
+*/
+.featured {
+  display: grid;
+  background-image: url('/img/bgs/landscape-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10% 20% 10%;
+}
+/**
+* Featured News and Updates' Top Content (2 x 1)
+*/
+#featured-top {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 0 0 2%;
+}
+.card-image1 {
+  display: grid;
+}
+#featured-top img {
+  width: 100%;
+}
+/**
+* Featured News and Updates' Bottom Content (1 x 3)
+*/
+#featured-bottom {
+  display: grid;
+  grid-template-columns: 100%;
+}
+#featured-bottom img {
+  width: 100%;
+}
+/**
+* Community News (BG2)
+*/
+#community {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(3, 1fr);
+  background-image: url('/img/bgs/green-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5% 15% 5%;
+}
+.card-image2 {
+  display: grid;
+  align-content: center;
+}
+#community img {
+  width: 100%;
+}
+/**
+* Footer.
+*/
+footer {
+  display: grid;
+  grid-area: footer;
+  grid-template-rows: repeat(2, 1fr);
+  background-color: black;
+  justify-content: center;
+  justify-items: center;
+  padding: 5% 10% 1%;
+} 
+footer ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+footer li {
+  float: left;
+}
+footer li a {
+  font-size: 20px;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+footer li a:hover {
+  color: #c13e31;
+}
+footer div {
+  padding: 0 0 1%;
+}
+/**
+* Article Container Type #1.
+*/
+.article-container1 {
+  display: grid;
+  grid-template-columns: 100%;
+  background-color: white;
+  margin: 0 2% 0;
+}
+/**
+* Article Container Type #2.
+*/
+.article-container2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: white;
+  align-items: center;
+  margin: 2% 0 0 2%;
+}
+/**
+* Article Container Type #1 and #2.
+*/
+.article-container1 div, .article-container2 div {
+  margin: 3%;
+}
+/**
+* Article Container Type #3.
+*/
+.article-container3 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: rgba(0,0,0,0.75);
+  color: white;
+  align-items: center;
+}
+
+.article-container3 div {
+  margin: 2%
+}
