@@ -35,16 +35,15 @@ document.addEventListener('DOMContentLoaded', function (e) {
     ajaxGET("/article_data?format=json", function(data) {
         let articleData = JSON.parse(data);
         let htmlContent = '';
-        let startIndex = 0; // Define the starting index of the loop
-        let numIterations = 2; // Define the number of iterations in the loop
+        let startIndex = 0;
+        let numIterations = 2;
 
-        // Iterate through the specified number of items starting from the specified index
         for (let i = startIndex; i < Math.min(startIndex + numIterations, articleData.length); i++) {
             htmlContent += `
                 <div class='article-container1'>
                     <!-- Attribute #1: Image -->
                     <div class='card-image1'>
-                        <img src='${articleData[i].img}' alt=''/>
+                        <img src='${articleData[i].img}' alt='img'/>
                     </div>
                     <div class='card-body'>
                         <!-- Attribute #2: Article Title -->
@@ -68,16 +67,15 @@ document.addEventListener('DOMContentLoaded', function (e) {
     ajaxGET("/article_data?format=json", function(data) {
         let articleData = JSON.parse(data);
         let htmlContent = '';
-        let startIndex = 2; // Define the starting index of the loop
-        let numIterations = 2; // Define the number of iterations in the loop
+        let startIndex = 2;
+        let numIterations = 2;
 
-        // Iterate through the specified number of items starting from the specified index
         for (let i = startIndex; i < Math.min(startIndex + numIterations, articleData.length); i++) {
             htmlContent += `
                 <div class='article-container2'>
                     <!-- Attribute #1: Image -->
                     <div class='card-image2'>
-                        <img src='${articleData[i].img}' alt=''/>
+                        <img src='${articleData[i].img}' alt='img'/>
                     </div>
                     <div class='card-body'>
                         <!-- Attribute #2: Article Title -->
@@ -101,16 +99,15 @@ document.addEventListener('DOMContentLoaded', function (e) {
     ajaxGET("/article_data?format=json", function(data) {
         let articleData = JSON.parse(data);
         let htmlContent = '';
-        let startIndex = 4; // Define the starting index of the loop
-        let numIterations = 6; // Define the number of iterations in the loop
+        let startIndex = 4;
+        let numIterations = 6;
 
-        // Iterate through the specified number of items starting from the specified index
         for (let i = startIndex; i < Math.min(startIndex + numIterations, articleData.length); i++) {
             htmlContent += `
                 <div class='article-container3'>
                     <!-- Attribute #1: Image -->
                     <div class='card-image2'>
-                        <img src='${articleData[i].img}' alt=''/>
+                        <img src='${articleData[i].img}' alt='img'/>
                     </div>
                     <div class='card-body'>
                         <!-- Attribute #2: Article Title -->
