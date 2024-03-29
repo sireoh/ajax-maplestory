@@ -582,3 +582,49 @@ margin: 2%
     padding: 0.5vw 4.5vw 0.5vw;
   }
 }
+
+/**
+* Assignment #6.
+*/
+
+#ass6 {
+  display: none;
+  position: fixed;
+  width: 86vw;
+  height: 58vh;
+  background-color: rgba(0, 0, 0, 0.70);
+  top: 23vh;
+  left: 7vw;
+  color:white;
+}
+
+#ass6 table {
+  margin:0;
+  font-family: "Zilla Slab", serif;
+}
+
+#ass6 th {
+  padding: 2vh 3vw 2vh;
+}
+
+#ass6 td {
+  padding: 3vh 0 3vh;
+}
+
+/**
+* Assignment #6 - Mobile.
+*/
+
+@media only screen and (max-width: 990px) {
+  #ass6 {
+    overflow-y: scroll;
+  }
+  
+  #ass6 th {
+    padding: 0;
+  }
+  
+  #ass6 td {
+    padding: 0;
+  }
+}

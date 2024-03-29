@@ -131,3 +131,21 @@ document.addEventListener('DOMContentLoaded', function (e) {
         document.getElementById("ajax_footer").innerHTML = data;
     });
 });
+
+/** 
+ * Assignment #6 Stuff.
+ */
+
+function showPosts() {
+    if (document.getElementById("ass6").style.display === "block") {
+        document.getElementById("ass6").style.display = "none";
+    } else {
+        document.getElementById("ass6").style.display = "block";
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function (e) {
+    ajaxGET("/innerjoin", function(data) {
+        document.getElementById("ass6").innerHTML = data;
+    });
+});
